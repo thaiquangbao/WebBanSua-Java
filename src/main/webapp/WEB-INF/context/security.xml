@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+            
+    <http auto-config="false" use-expressions="true" disable-url-rewriting="true">
+    	<!--Admin  -->
+    	<!-- Giỏ hàng -->
+    	<intercept-url pattern="/admin/thanhToan/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/thanhtoan/{tongCong}/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/updateCart" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/giohang" access="hasAnyRole('ADMIN')" />
+    	<!-- Feedback -->
+    	<intercept-url pattern="admin/feedback/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/feedback/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/feedback/formUpdateFeedback/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/feedback/formAddFeedback" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/feedback" access="hasAnyRole('ADMIN')" />
+    	<!-- Đơn hàng -->
+    	<intercept-url pattern="/admin/hoaDon/hoaDonDaDat/{userName}/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/hoaDon/hoaDonDaDat/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/donhang/chitietdonhang/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/donhang" access="hasAnyRole('ADMIN')" />
+    	<!-- Category -->
+    	<intercept-url pattern="/admin/sanpham/category/{id}/update" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/category/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/category/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/category/createCategory" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/category" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/category/formCategory" access="hasAnyRole('ADMIN')" />
+    	<!-- Discount -->
+    	<intercept-url pattern="/admin/sanpham/discount/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/formUpdateDiscount/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/restoreAllDiscount" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/deleteDiscount/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/deleteAllDiscount" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/destroyDiscount/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/destroyAllDiscount" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/restoreDiscount/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/createDiscount" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount/formDiscount" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/discount" access="hasAnyRole('ADMIN')" />
+    	<!-- Nhà Cung cấp -->
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/restoreAllSupplier" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/{id}/edit" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/destroyAllSupplier" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/deleteAll" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/{id}/restore" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/{id}/destroy" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/{id}/delete" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/createSupplier" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap/formsupplier" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/nhacungcap" access="hasAnyRole('ADMIN')" />
+    	<!-- Sản phẩm -->
+    	<intercept-url pattern="/admin/sanpham/{tenProduct}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/listSanPham/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/deleteSanPham/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/trash/destroyAllSanPham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/formUpdateSanPham/{id}/update" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/trash/restoreAllSanPham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/trash/destroySanPham/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/trash/restoreSanPham/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/deleteAllSanPham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/formUpdateSanPham/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/formAddSanPham/create" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/formAddSanPham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/listSanPham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/checkEmail" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/sanpham/checkTen" access="hasAnyRole('ADMIN')" />
+    	<!-- User -->
+    	<intercept-url pattern="/admin/users/formUpdateKhachHang/{id}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/users/formAddUser" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/users/trash" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/General/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/EditProfile/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/PassWord/{userName}" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/Profile" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/EditProfile" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/PassWord" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/users" access="hasAnyRole('ADMIN')" />
+    	<intercept-url pattern="/admin/trang-chu" access="hasAnyRole('ADMIN')" />
+    	<!--User  -->
+    	<!-- Sản phẩm -->
+    	<intercept-url pattern="/sanpham/{tenProduct}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/sanpham" access="hasAnyRole('USER')" />
+    	<!-- Giỏ hàng -->
+    	<intercept-url pattern="/hoaDon/hoaDonDaDat/{userName}/{id}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/hoaDon/hoaDonDaDat/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/thanhToan/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/thanhtoan/{tongCong}/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/updateCart" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/giohang" access="hasAnyRole('USER')" />
+    	
+    	<intercept-url pattern="/feedback/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/PassWord/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/EditProfile/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/General/{userName}" access="hasAnyRole('USER')" />
+    	<intercept-url pattern="/trang-chu" access="hasAnyRole('USER')" />
+    	
+    	
+    	<access-denied-handler error-page="/accessDenied" />
+        <form-login  login-page="/guest/login"
+                     username-parameter="j_username"
+                     password-parameter="j_password"
+                     login-processing-url="/guest/login/j_spring_security_check"
+                     authentication-success-handler-ref="customSuccessHandler" 
+                     authentication-failure-url="/guest/login?incorrectAccount" />
+        <session-management invalid-session-url="/guest/login?sessionTimeout"/>
+        <logout delete-cookies="JSESSIONID"/>
+        
+    </http>
+    
+    <authentication-manager >
+        <authentication-provider user-service-ref="customUserDetailsService">
+        		<password-encoder ref="bcryptEncoder"/>
+        </authentication-provider>
+    </authentication-manager>
+    
+   <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+    
+      <beans:bean id="customSuccessHandler" class="com.suabot.security.CustomSuccessHandler" /> 
+    <beans:bean id="customUserDetailsService" class="com.suabot.service.impl.CustomUserDetailsService" /> <!--Đây là chổ nối với class xử lý đăng nhập  -->
+</beans:beans>

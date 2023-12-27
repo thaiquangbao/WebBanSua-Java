@@ -1,0 +1,150 @@
+.section1 {
+    height: 750px;
+    float: left;
+}
+
+.navbar-collapse {
+    height: 60px;
+    display: flex;
+    background-color: rgb(118, 136, 118);
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+a {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.col-md-5 p {
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+.col-md-5 h2 {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.box {
+    border-bottom: 1px solid gray;
+}
+
+.sectionmini1 {
+    height: 210px;
+    width: 100%;
+    background-color: rgb(254, 236, 239);
+    border-radius: 30px;
+}
+
+.sectionmini2 {
+    height: 450px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.sectionmini1 p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.sectionmini1 h3 {
+    margin-left: 30px;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    margin-right: 50px;
+}
+
+.chonsoluong {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.couplebutton {
+    justify-content: start;
+}
+
+.buttonz {
+    height: 50px;
+    width: 300px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.box1 {
+    height: 13px;
+}
+
+.col-md-9 p {
+    font-size: 15px;
+    margin-right: 40px;
+}
+
+.goiy {
+    height: 500px;
+    margin-left: 10px;
+}
+
+.goiy th {
+    width: 370px;
+}
+
+.noidung {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 18px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+}
+
+.noidung img {
+    margin-left: 8px;
+    margin-top: 3px;
+    height: 90%;
+}
+
+.noidung img:hover {
+    width: 40%;
+}
+
+.footer-bootraps {
+    height: 400px;
+    width: 100%;
+    background-color: #f6bedb;
+    border-radius: 30px;
+}
+
+.boxf {
+    margin-top: 60px;
+}
+
+.footer-bootraps h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    border-bottom: 2px solid black;
+    margin-right: 100px;
+}
+
+.footer-bootraps p {
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+.footer-bootraps .bando {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-top: 10px;
+}

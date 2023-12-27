@@ -1,0 +1,231 @@
+.navbar-collapse {
+    height: 60px;
+    display: flex;
+    background-color: rgb(118, 136, 118);
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+a {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.img-feature {
+    transition: 1s;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+}
+
+.list-image {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.list-image div {
+    flex: 1;
+    padding: 3px;
+}
+
+.list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.active {
+    background: black;
+}
+
+.aside-top {
+    margin-right: 10px;
+    font-size: 23px;
+}
+
+.order {
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    height: 50px;
+    width: 230px;
+    background-color: black;
+    border-radius: 30px;
+    display: none;
+}
+
+.col-md-3:hover .order {
+    display: block;
+}
+
+.boxt {
+    height: 10px;
+}
+
+.order a {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.aside-bottom p {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.quality h3:hover {
+    font-weight: bold;
+}
+
+.quality img {
+    margin-top: 10px;
+}
+
+.quality p {
+    font-size: 20px;
+}
+
+.quality {
+    height: 250px;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.quality ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.quality li {
+    float: left;
+    height: 250px;
+    width: 25%;
+}
+
+.quality h3 {
+    margin-top: 10px;
+    font-size: 19px;
+    border-bottom: 2px solid black;
+    margin-right: 40px;
+}
+
+.footer-bootraps {
+    height: 400px;
+    width: 100%;
+    background-color: #f6bedb;
+    border-radius: 30px;
+}
+
+.boxf {
+    margin-top: 60px;
+}
+
+.footer-bootraps h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    border-bottom: 2px solid black;
+    margin-right: 100px;
+}
+
+.footer-bootraps p {
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+.footer-bootraps .bando {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.info h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.a1:hover {
+    background-color: #df127b;
+}
+
+strong {
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.a1 p:hover {
+    color: white;
+}
+
+.g {
+    border-style: double;
+    border-radius: 100px;
+    width: 10%;
+}
+
+.khung {
+    height: 70px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.modal-body input {
+    width: 400px;
+}
+
+.TSP {
+    width: 400px;
+    height: 40px;
+}
+
+label {
+    font-size: 23px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators" >
+<!-- Phần này là để mapping dc vs html/css và header/footer -->
+	<excludes>
+		<pattern>/api*</pattern>
+	</excludes>
+	<decorator name="/guest" page="guest.jsp">
+		<pattern>/guest*</pattern>
+	</decorator>
+	<decorator name="/admin" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	<decorator name="/users" page="users.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>

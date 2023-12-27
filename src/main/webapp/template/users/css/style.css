@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-item .action {
+  display: block;
+  font-style: normal;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.profile-menu {
+  z-index: 2;
+}
+
+.profile-menu .menu {
+  width: 310px;
+  padding: 30px;
+  background-color: #222533;
+  border-radius: 10px;
+  position: absolute;
+  top: 37px;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.profile-menu .menu::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #222533;
+  border-top-left-radius: 3px;
+  position: absolute;
+  top: -8px;
+  right: 19px;
+  transform: rotate(45deg);
+}
+
+.profile-menu .menu .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-menu .menu .profile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.profile-menu .menu .profile .info {
+  margin-left: 15px;
+}
+
+.profile-menu .menu .profile .info h2 {
+  color: #dadada;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.profile-menu .menu .profile .info p {
+  color: #7d8193;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-menu .menu .btn {
+  width: 250px;
+  height: 53px;
+  color: #e5e5e5;
+  background-color: #1a1c29;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.profile-menu .menu .btn img {
+  width: 20px;
+  margin-right: 5px;
+  user-select: none;
+}
+
+.profile-menu .menu .btn:hover {
+  background-color: #292c3d;
+}
+
+.profile-menu .menu ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.profile-menu .menu ul li:last-child {
+  margin: 0;
+}
+
+.profile-menu .menu ul li a {
+  color: #e5e5e5;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.profile-menu .menu ul li img {
+  width: 26px;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.name-price .name{
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.name-price .price{
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+.btn-order {
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  padding: 5px 25px;
+  background-color: #f17575;
+  color: white;
+}
+
+
+

@@ -1,0 +1,24 @@
+.tensua {
+    height: 80px;
+    width: 300px;
+    background-color: rgb(228, 238, 94);
+    margin-left: 30px;
+    margin-left: 520px;
+    border-radius: 30px;
+}
+
+.bo {
+    height: 2px;
+}
+
+.bo1 {
+    height: 40px;
+}
+
+.bo2 {
+    height: 100px;
+}
+
+.tensua .h2 {
+    color: white;
+}
